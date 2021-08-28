@@ -4,6 +4,7 @@ import 'ui/bill_splitter.dart';
 import 'ui/my_card.dart';
 import 'ui/scaffold_material_hello_world.dart';
 import 'ui/material_hello_world.dart';
+import 'ui/todo.dart';
 
 void main() {
   //runApp(HelloWorld());
@@ -11,7 +12,8 @@ void main() {
   //runApp(MaterialApp(home: ScaffoldMaterialHelloWorld()));
   //runApp(MaterialApp(home: MyCard()));
   //runApp(MaterialApp(home: BillSplitter()));
-  runApp(MaterialApp(home: Movies()));
+  //runApp(MaterialApp(home: Movies()));
+  runApp(MaterialApp(home: Todo()));
 }
 
 class HelloWorld extends StatelessWidget {

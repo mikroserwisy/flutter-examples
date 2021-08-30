@@ -13,6 +13,7 @@ class _MoviesState extends State<Movies> {
 
   //final _moviesService = MoviesService(FakeMoviesProvider());
   final _moviesService = MoviesService(RemoteMoviesProvider("https://raw.githubusercontent.com/landrzejewski/flutter-examples/master/test_data.json"));
+  String _batteryState = "";
   List<Movie> _movies = [];
 
   @override
@@ -21,16 +22,22 @@ class _MoviesState extends State<Movies> {
     _moviesService
         .loadMovies()
         .then(_onMoviesLoaded);
+    _moviesService.getBatteryLevel()
+      .then(_onBatteryLevel);
   }
 
   _onMoviesLoaded(List<Movie> movies) {
     setState(() => _movies = movies);
   }
 
+  _onBatteryLevel(String level) {
+    setState(() => _batteryState = level );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Movies"), backgroundColor: Colors.grey),
+      appBar: AppBar(title: Text(_batteryState), backgroundColor: Colors.grey),
       backgroundColor: Colors.grey.shade200,
       body: ListView.builder(itemCount: _movies.length, itemBuilder: (BuildContext context, int index) {
         return Card(

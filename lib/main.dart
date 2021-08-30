@@ -12,8 +12,8 @@ void main() {
   //runApp(MaterialApp(home: ScaffoldMaterialHelloWorld()));
   //runApp(MaterialApp(home: MyCard()));
   //runApp(MaterialApp(home: BillSplitter()));
-  //runApp(MaterialApp(home: Movies()));
-  runApp(MaterialApp(home: Todo()));
+  runApp(MaterialApp(home: Movies()));
+  //runApp(MaterialApp(home: Todo()));
 }
 
 class HelloWorld extends StatelessWidget {

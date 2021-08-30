@@ -26,3 +26,20 @@ class HelloWorld extends StatelessWidget {
   }
 
 }
+
+/*
+https://pub.dev/packages/path_provider
+https://pub.dev/packages/user_preferences
+https://pub.dev/packages/shared_preferences
+https://pub.dev/packages/hive
+https://pub.dev/packages/sqlite3/example
+https://pub.dev/packages/location
+https://pub.dev/packages/geolocator
+https://flutter.dev/docs/cookbook/plugins/picture-using-camera
+https://pub.dev/packages/image_picker
+https://flutter.dev/docs/cookbook/persistence/sqlite
+https://flutter.dev/docs/cookbook/persistence/reading-writing-files
+https://flutter.dev/docs/cookbook/persistence/key-value
+https://flutteragency.com/how-to-detect-the-host-platform-from-dart-code/
+https://pub.dev/packages/cached_network_image
+ */
